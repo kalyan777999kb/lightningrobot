@@ -6,17 +6,17 @@ ENV = bool(os.environ.get("ENV", False))
 
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("APP_ID", "28472350"))
     # 6 is a placeholder
-    LIGHTNING_PRO = os.environ.get("LIGHTNING_PRO", None)
+    LIGHTNING_PRO = os.environ.get("LIGHTNING_PRO", "YES")
     if not LIGHTNING_PRO:
         LIGHTNING_PRO = "YES"
     else:
         LIGHTNING_PRO = LIGHTNING_PRO
 
-    API_HASH = os.environ.get("API_HASH", None)
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
-    DB_URI = os.environ.get("DATABASE_URL", None)
+    API_HASH = os.environ.get("API_HASH", "53cc464474ab7d3575554e831f2f0104")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1AZWarzUBu6ndhEj7kcpVBsbDRlqiyJsFtIGrEMnqxvzpfZQYZuNnw1KhE3suutHTqXZnVHpex0PswrCKNaCa8bWXNoGNjAOps6CzPh7mAR11lhk2Ivbj2DYfbbZ_bvzgcz5gQscYyw8VZKkjazTW1faWT5X-AOCyXuLcrIQ8vlMcTTdtwukBdAqyGp4Z9pakr7sVQzKLl6VcuOJRuy06mz5sSR9bEU0oUMiJo_kLmjqByMM94tDM4qDstGW-PhcYmLovdBQbWUo2m3V9Ip0c10szVVBk8RJtMLDLSytipp5xV9Mnuc7j2VfjJiLnTtbO80LltEk7n6H7If0UtYxnAHT93KCPW0I=")
+    DB_URI = os.environ.get("DATABASE_URL", "postgres://kpbbtezq:FgPKt6L8qvGKWhGjlmV76E1VRaQY4Mmx@mouse.db.elephantsql.com/kpbbtezq")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/")
     BIO_MSG = os.environ.get("BIO_MSG", None)
     ALIVE_MESSAGE = os.environ.get("ALIVE_MESSAGE", None)
@@ -28,9 +28,9 @@ class Var(object):
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     # Here for later purposes
-    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "1311769691").split())
+    SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "5916167735").split())
     WHITELIST_USERS = set(
-        int(x) for x in os.environ.get("WHITELIST_USERS", "1311769691").split()
+        int(x) for x in os.environ.get("WHITELIST_USERS", "5655356960").split()
     )
     MAX_ANTI_FLOOD_MESSAGES = 10
     # warn mode for anti flood
@@ -38,9 +38,9 @@ class Var(object):
         until_date=None, view_messages=None, send_messages=True
     )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
-    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1311769691").split())
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1311769691").split())
-    SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+    DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "5916167735").split())
+    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5916167735").split())
+    SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "5655356960").split())
     # custom vars
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
@@ -58,20 +58,20 @@ class Var(object):
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
-    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
-    TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", None)
+    TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", "6050864743:AAFoUR1znsMLr1WW7sN8YZ49UFDxXt_z71s")
+    TG_BOT_USER_NAME_BF_HER = os.environ.get("TG_BOT_USER_NAME_BF_HER", "@Lightninggg_bot")
     TAG_LOG = os.environ.get("TAG_LOG", None)
     NO_SONGS = bool(os.environ.get("NO_SONGS", False))
     DOWNLOAD_PFP_URL_CLOCK = os.environ.get("DOWNLOAD_PFP_URL_CLOCK", None)
     MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
-    COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID", -100))
-    PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}")
+    COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID", "-1001642786913"))
+    PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", f"{COMBINED_GROUP_ID}"-1001642786913")
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
     MAX_MESSAGE_SIZE_LIMIT = 4095
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     CMD_HNDLR = os.environ.get("CMD_HNDLR", "\.")
-    TAG_FEATURE = os.environ.get("TAG_FEATURE", "DISABLE")
+    TAG_FEATURE = os.environ.get("TAG_FEATURE", "ENABLE")
     PM_DATA = os.environ.get("PM_DATA", "ENABLE")
     MAX_SPAM = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 5))
     SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME", None)
@@ -83,7 +83,7 @@ class Var(object):
     )
     EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", "〄𝕭〄")
     SPOTIFY_PASS = os.environ.get("SPOTIFY_PASS", None)
-    G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001291663564))
+    G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001642786913))
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
@@ -134,7 +134,7 @@ class Var(object):
     UB_BLACK_LIST_CHAT = set(
         int(x) for x in os.environ.get("UB_BLACK_LIST_CHAT", "").split()
     )
-    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID",  f"{COMBINED_GROUP_ID}")
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID",  f"{COMBINED_GROUP_ID}"-1001642786913")
     if PRIVATE_GROUP_ID is not None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
@@ -143,7 +143,7 @@ class Var(object):
                 "Invalid Private Group ID. Make sure your ID is starts with -100 and make sure that it is only numbers."
             )
 
-    PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID",  f"{COMBINED_GROUP_ID}")
+    PM_LOGGR_BOT_API_ID = os.environ.get("PM_LOGGR_BOT_API_ID",  f"{COMBINED_GROUP_ID}"-1001642786913")
     if PM_LOGGR_BOT_API_ID:
         PM_LOGGR_BOT_API_ID = int(PM_LOGGR_BOT_API_ID)
 
