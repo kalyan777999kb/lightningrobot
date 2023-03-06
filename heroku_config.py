@@ -16,7 +16,7 @@ class Var(object):
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     LESS_SPAMMY = os.environ.get("LESS_SPAMMY", None), 
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "374255a5-723f-4ed5-9bbc-e0b0be85303a")
-    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", lightningrobot)
+    HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", lightning)
     TG_BOT_TOKEN_BF_HER = os.environ.get("TG_BOT_TOKEN_BF_HER", "6209411779:AAHj1wUAd49glCOvVsAo28PjHSX9Frk4gAw")
     # Send .get_id in any channel to fill this value.
     COMBINED_GROUP_ID = int(os.environ.get("COMBINED_GROUP_ID", "-909422382"))
